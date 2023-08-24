@@ -4,11 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FLEXBOX APRENDENDO</title>
+    <title>OdontoClinic</title>
     <style>
-	@media(max-width:600px) {
-	.boxharmonizar {back-color: #FF0000;}
-	}
+       
         .wrapper{
             margin: auto;
             /* centralizar */
@@ -80,7 +78,8 @@
             height: auto;
             padding-left: 15px; 
         }
-        
+        .textologo{
+            font-size: 15px;
             
         }
 
@@ -101,16 +100,16 @@
 
 
         .boxtratamentos{
-             background-color: rgb(25, 87, 212);
+           background-color: rgb(25, 87, 212);
             width:20%;
-            height: 450px;
+            height: 400px;
             margin:1%;
             padding: 0,5%;
             border-radius: 20px;
             color: white;
             font-family: Century ;
             text-align: center;
-            
+           
            
         }
 
@@ -119,14 +118,64 @@
             height: 60px;
            
         }
+
+         /*BREAK POINTS*/
+
+         @media screen and (min-width:375px){
+            .boxtratamentos{
+                width: 90%;
+                height: auto;
+                float:left;
+                margin:1%;
+                font-size: 1.3em;
+                padding: 10%;
+            }
+                
+        }
+
+        @media screen and (min-width:900px) {
+            .boxtratamentos{
+                width:20%;
+                height: auto;
+                float:left;
+                margin:1%;
+                padding:10%;
+            }
+        }
+
+        @media screen and (min-width:992px){
+            .boxtratamentos{
+                width: 20%;
+                height: auto;
+                float:left;
+                margin:1%;
+            }
+            .boxharmonizar{
+                width: 30%;
+            }
+        }
+
+        @media screen and (min-width:1200px){
+            .boxtratamentos{
+                width: 20%;
+                height:300px;
+                float:left;
+                margin:1%;
+                padding: 10px;
+            }
+            
+        }
         
+/*fim*/
+
+
         .boxharmonizar{
             background-color:white;
             width:40%;
             height:auto;
             margin:0;
             padding: 0;
-            font-size: 1em;
+            font-size: 1.1em;
             
         }
         .imgharmonizar{
@@ -135,13 +184,13 @@
             
         }
         .t1{
-            font-size: 1em;
+            font-size: 30px;
             color: #297bc4;
             text-align:center ;
             
         }
         .t2{
-           font-size: 1em;
+            font-size: 7mm;
         }
 
 
@@ -158,6 +207,7 @@
             font-size: 1.1em;
             padding-right: 3.31%;
             padding-top:20px;
+            
            
             
         }
@@ -178,11 +228,13 @@
             padding-top: 10px;
             font-size: 1.1em;
             text-align: center;
+            
         }
         h1{
-           font-size: 1em;
+            font-size: 20px;
         }
 
+       
        
     </style>
 </head>
@@ -190,7 +242,7 @@
     <div class="wrapper">
         <div class="boxlogo">
             <img src="imagens/dente.png"class="imglogo">
-           
+            <p class="textologo">ODONTOCLINIC-2023</p> 
          </div>
         
         <div class="boxtopo">
@@ -209,24 +261,25 @@
         <div class="boxBanner">
            <img src="imagens/banner dentista.png" class="imgbanner" alt="">
         </div>
-       <div class="texto">
-        
-       </div>
+       
         <div class="boxtratamentos">
            <h1> IMPLANTES</h1>
            <img src="imagens/dente.png"class="imgtratamento">
            <p>Implante dentário é um procedimento que consiste na fixação de um pino de titânio no maxilar para servir de apoio para a colocação de um dente12345. O implante é indicado nos casos em que a pessoa perdeu um ou mais dentes devido a cáries, periodontite</p>
         </div>
+
         <div class="boxtratamentos">
            <h1> PROTESES</h1>
            <img src="imagens/dente.png"class="imgtratamento">
            <p>Prótese fixa: é aparafusada na boca e não pode ser retirada. Pode ser feita de coroa, ponte ou implante dentário.</p>
         </div>
+
         <div class="boxtratamentos">
             <H1>CLAREAMENTO</H1>
             <img src="imagens/dente.png"class="imgtratamento">
             <p>O que é o clareamento dental? O clareamento dental é um tratamento realizado com substâncias químicas, que modificam a cor do dente. O principal ingrediente que age no clareamento dental é oxigênio, que é proveniente do peróxido de hidrogênio ou peróxido de carbamida.</p>
         </div>
+
         <div class="boxtratamentos">
             <H1>CIRURGIA</H1>
             <img src="imagens/dente.png"class="imgtratamento">
@@ -234,6 +287,9 @@
                 A harmonização facial é capaz de, através de um conjunto de procedimentos, corrigir os principais ângulos do rosto e suavizar as linhas de expressão da pele, com o uso de produtos, sem a necessidade de incisões.</p>
             
         </div>
+
+
+
 
         <div class="boxharmonizar">
             
